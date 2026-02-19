@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend canister entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting the pastel color scheme replacement feature across frontend files with high confidence.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of four frontend files describing the pastel-themed Study Boost application components and styling.",
+  "frontend/index.css": "Tailwind CSS base styles with OKLCH color variables for light and dark modes using a neutral grayscale palette.",
+  "frontend/index.html": "HTML entry point for the Study Boost application with root div and module script reference.",
+  "frontend/src/App.tsx": "Main React component rendering a pastel-themed educational landing page with hero section, notes input, feature cards, and navigation for Study Boost platform.",
+  "frontend/src/hooks/useActor.ts": "React hook managing ICP backend actor creation with authentication support, automatic query invalidation on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication with login, logout, and identity state management.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks with a basic backend readiness check hook implemented.",
+  "frontend/src/index.css": "Comprehensive Tailwind CSS configuration defining pastel color system (pink, lavender, mint, peach, blue) using OKLCH color space with light/dark mode support and gradient utilities.",
+  "frontend/src/main.tsx": "React application entry point setting up QueryClient, InternetIdentityProvider, and rendering the root App component.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with pastel color tokens mapped to CSS variables, custom border radius, Inter font, and animation keyframes.",
+  "project_state.json": "Project state file tracking an educational platform that transforms study notes into videos and slides. Contains existing features (notes input, slide viewer, video player, library view, UI design with pastel colors) and pending feature requests for backend processing and content generation."
+}

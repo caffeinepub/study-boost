@@ -1,0 +1,41 @@
+{
+  "kind": "build_request",
+  "title": "Update website color scheme to pastel colors",
+  "projectName": "Study Slides",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Replace the current vibrant gradient color scheme (coral/orange to purple/pink) with a soft pastel color palette throughout the entire website, including backgrounds, buttons, text highlights, and accent colors",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-pastel"
+        ],
+        "quotes": [
+          "can you make the website in pastel colours"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All vibrant gradients are replaced with soft pastel colors",
+        "Color palette maintains consistency across all pages and components",
+        "Pastel colors provide sufficient contrast for readability",
+        "UI elements like buttons, inputs, and cards use pastel color variations"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing clean, study-focused interface layout",
+    "Preserve the modern sans-serif typography and readability optimizations",
+    "Keep the generous whitespace and clear visual hierarchy intact"
+  ],
+  "nonGoals": [
+    "Changing the functional behavior of any components",
+    "Modifying the layout structure or spacing",
+    "Altering typography choices beyond color adjustments"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

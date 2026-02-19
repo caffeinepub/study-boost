@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Pastel Color Palette - Light Mode */
+        --background: 0.98 0.01 320;
+        --foreground: 0.25 0.02 280;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 280;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 280;
+        
+        --primary: 0.35 0.02 280;
+        --primary-foreground: 0.98 0.01 320;
+        
+        --secondary: 0.95 0.02 320;
+        --secondary-foreground: 0.35 0.02 280;
+        
+        --muted: 0.96 0.01 280;
+        --muted-foreground: 0.55 0.02 280;
+        
+        --accent: 0.94 0.02 160;
+        --accent-foreground: 0.35 0.02 280;
+        
+        --destructive: 0.65 0.15 15;
+        --destructive-foreground: 0.98 0.01 320;
+        
+        --border: 0.92 0.02 300;
+        --input: 0.92 0.02 300;
+        --ring: 0.75 0.08 280;
+        
+        /* Pastel Colors */
+        --pastel-pink: 0.85 0.12 350;
+        --pastel-lavender: 0.80 0.10 280;
+        --pastel-mint: 0.88 0.10 160;
+        --pastel-peach: 0.87 0.10 50;
+        --pastel-blue: 0.82 0.10 240;
+        
+        /* Chart colors */
+        --chart-1: 0.85 0.12 350;
+        --chart-2: 0.80 0.10 280;
+        --chart-3: 0.88 0.10 160;
+        --chart-4: 0.87 0.10 50;
+        --chart-5: 0.82 0.10 240;
+        
+        /* Sidebar */
+        --sidebar: 0.98 0.01 320;
+        --sidebar-foreground: 0.25 0.02 280;
+        --sidebar-primary: 0.80 0.10 280;
+        --sidebar-primary-foreground: 0.98 0.01 320;
+        --sidebar-accent: 0.95 0.02 320;
+        --sidebar-accent-foreground: 0.35 0.02 280;
+        --sidebar-border: 0.92 0.02 300;
+        --sidebar-ring: 0.75 0.08 280;
+    }
+
+    .dark {
+        --background: 0.18 0.02 280;
+        --foreground: 0.95 0.01 320;
+        
+        --card: 0.22 0.02 280;
+        --card-foreground: 0.95 0.01 320;
+        
+        --popover: 0.22 0.02 280;
+        --popover-foreground: 0.95 0.01 320;
+        
+        --primary: 0.80 0.10 280;
+        --primary-foreground: 0.18 0.02 280;
+        
+        --secondary: 0.28 0.02 280;
+        --secondary-foreground: 0.95 0.01 320;
+        
+        --muted: 0.28 0.02 280;
+        --muted-foreground: 0.65 0.02 280;
+        
+        --accent: 0.35 0.03 280;
+        --accent-foreground: 0.95 0.01 320;
+        
+        --destructive: 0.60 0.18 15;
+        --destructive-foreground: 0.95 0.01 320;
+        
+        --border: 0.30 0.02 280;
+        --input: 0.30 0.02 280;
+        --ring: 0.70 0.08 280;
+        
+        /* Pastel Colors - Dark Mode (slightly muted) */
+        --pastel-pink: 0.75 0.12 350;
+        --pastel-lavender: 0.70 0.10 280;
+        --pastel-mint: 0.75 0.10 160;
+        --pastel-peach: 0.75 0.10 50;
+        --pastel-blue: 0.72 0.10 240;
+        
+        /* Chart colors */
+        --chart-1: 0.75 0.12 350;
+        --chart-2: 0.70 0.10 280;
+        --chart-3: 0.75 0.10 160;
+        --chart-4: 0.75 0.10 50;
+        --chart-5: 0.72 0.10 240;
+        
+        /* Sidebar */
+        --sidebar: 0.22 0.02 280;
+        --sidebar-foreground: 0.95 0.01 320;
+        --sidebar-primary: 0.70 0.10 280;
+        --sidebar-primary-foreground: 0.95 0.01 320;
+        --sidebar-accent: 0.28 0.02 280;
+        --sidebar-accent-foreground: 0.95 0.01 320;
+        --sidebar-border: 0.30 0.02 280;
+        --sidebar-ring: 0.70 0.08 280;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .bg-gradient-pastel {
+        background: linear-gradient(
+            135deg,
+            oklch(var(--pastel-pink)) 0%,
+            oklch(var(--pastel-lavender)) 50%,
+            oklch(var(--pastel-mint)) 100%
+        );
+    }
+    
+    .text-pastel-pink {
+        color: oklch(var(--pastel-pink));
+    }
+    
+    .text-pastel-lavender {
+        color: oklch(var(--pastel-lavender));
+    }
+    
+    .text-pastel-mint {
+        color: oklch(var(--pastel-mint));
+    }
+    
+    .text-pastel-peach {
+        color: oklch(var(--pastel-peach));
+    }
+    
+    .text-pastel-blue {
+        color: oklch(var(--pastel-blue));
+    }
+    
+    .bg-pastel-pink {
+        background-color: oklch(var(--pastel-pink));
+    }
+    
+    .bg-pastel-lavender {
+        background-color: oklch(var(--pastel-lavender));
+    }
+    
+    .bg-pastel-mint {
+        background-color: oklch(var(--pastel-mint));
+    }
+    
+    .bg-pastel-peach {
+        background-color: oklch(var(--pastel-peach));
+    }
+    
+    .bg-pastel-blue {
+        background-color: oklch(var(--pastel-blue));
+    }
+    
+    .border-pastel-pink {
+        border-color: oklch(var(--pastel-pink));
+    }
+    
+    .border-pastel-lavender {
+        border-color: oklch(var(--pastel-lavender));
+    }
+    
+    .border-pastel-mint {
+        border-color: oklch(var(--pastel-mint));
+    }
+    
+    .border-pastel-peach {
+        border-color: oklch(var(--pastel-peach));
+    }
+    
+    .border-pastel-blue {
+        border-color: oklch(var(--pastel-blue));
+    }
+}

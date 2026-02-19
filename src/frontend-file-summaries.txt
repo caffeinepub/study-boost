@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main application component featuring a pastel-themed educational landing page with hero section, notes input area, feature cards, and call-to-action sections for the Study Boost platform.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks that will handle backend data operations; currently contains a basic backend readiness check hook.",
+  "frontend/src/index.css": "Global stylesheet defining a comprehensive pastel color system using OKLCH color space with soft pink, lavender, mint, peach, and blue tones for both light and dark modes, plus utility classes for pastel gradients and colors.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with pastel color tokens (pink, lavender, mint, peach, blue) mapped to CSS variables, custom border radius, and Inter font family for a cohesive design system."
+}
